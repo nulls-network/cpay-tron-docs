@@ -53,4 +53,4 @@ window.open(`${ChecksSiteHref}/?${params.toString()}`, "_blank");
 
 #### 跳转页面
 
-![收银台结果](/public/checks-demo.png)
+![收银台结果](/checks-demo.png)
