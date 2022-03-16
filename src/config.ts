@@ -1,5 +1,5 @@
 export const SITE = {
-	title: 'CPay system',
+	title: 'DPay system',
 	description: 'A pay system in tron chain',
 	defaultLanguage: 'en_US',
 };
@@ -16,6 +16,8 @@ export const KNOWN_LANGUAGES = {
 	// English: 'en',
   chinesse:'zh-CN'
 };
+
+export const ApiUrl = 'https://api-tron-v1.dpay.systems'
 
 // Uncomment this to add an "Edit this page" button to every page of documentation.
 // export const GITHUB_EDIT_URL = `https://github.com/withastro/astro/blob/main/docs/`;
@@ -34,8 +36,13 @@ export const KNOWN_LANGUAGES = {
 export const SIDEBAR = {
   'zh-CN':[
     { text: '商户接入指南', header: true  },
-    { text: '订单签名', link: 'zh-CN/signOrder' },
-    { text: '生成订单', link: 'zh-CN/createOrder' },
+    { text: '第一步：创建订单', link: 'zh-CN/createOrder' },
+    { text: '第二步：展示收银台', link: 'zh-CN/checksOrder' },
+    { text: '第三步：监听订单状态', link: 'zh-CN/listenOrder' },
+    { text: '其他', header: true  },
+    { text: '使用metamask钱包', link: 'zh-CN/other/wallet' },
+    { text: '订单签名算法(javascript)', link: 'zh-CN/other/signOrder' },
+    { text: '订单签名算法(服务端)', link: 'zh-CN/other/signOrder2' },
   ]
 	// en: [
 	// 	{ text: 'Section Header', header: true },
