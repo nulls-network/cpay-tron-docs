@@ -36,6 +36,7 @@ export const ApiUrl = 'https://api-tron-v1.dpay.systems'
 export const SIDEBAR = {
   'zh-CN':[
     { text: '商户接入指南', header: true  },
+    { text: '指引', link: 'zh-CN/guide' },
     { text: '第一步：创建订单', link: 'zh-CN/createOrder' },
     { text: '第二步：展示收银台', link: 'zh-CN/checksOrder' },
     { text: '第三步：监听订单状态', link: 'zh-CN/listenOrder' },
