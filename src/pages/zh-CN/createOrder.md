@@ -38,7 +38,8 @@ layout: ../../layouts/MainLayout.astro
 | pay_chain    | string | 区块链描述（指定 tron）                                       |
 | pay_token    | string | 支付币种合约（指定 USDT: TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t） |
 | pay_amount   | string | 支付金额（无需带币种精度，如：1.2）                           |
-| notify       | string | 支付成功通知地址（如：127.0.0.1 等 URL 地址）                 |
+| pay_amount   | string | 支付金额（无需带币种精度，如：1.2）                           |
+| notify       | string | 支付成功通知地址（如：https://google.com 等 URL 地址 ）                 |
 | signature    | string | 以上字段用私钥签名的后的数据([查看签名指引](/zh-CN/other/signOrder))      |
 
 **请求响应体**：
