@@ -14,7 +14,7 @@ export const OPEN_GRAPH = {
 
 export const KNOWN_LANGUAGES = {
 	// English: 'en',
-  chinesse:'zh-CN'
+	chinesse: 'zh-CN'
 };
 
 export const ApiUrl = 'https://api-tron-v1.dpay.systems'
@@ -34,24 +34,28 @@ export const ApiUrl = 'https://api-tron-v1.dpay.systems'
 // }
 
 export const SIDEBAR = {
-  'zh-CN':[
-    { text: '商户接入指南', header: true  },
-    { text: '指引', link: 'zh-CN/guide' },
-    { text: '第一步：创建订单', link: 'zh-CN/createOrder' },
-    { text: '第二步：展示收银台', link: 'zh-CN/checksOrder' },
-    { text: '第三步：监听订单状态', link: 'zh-CN/listenOrder' },
-    { text: '其他', header: true  },
-    { text: '使用metamask钱包', link: 'zh-CN/other/wallet' },
-    { text: '订单签名算法(javascript)', link: 'zh-CN/other/signOrder' },
-    { text: '订单签名算法(服务端)', link: 'zh-CN/other/signOrder2' },
-  ]
-	// en: [
-	// 	{ text: 'Section Header', header: true },
-	// 	{ text: 'Introduction', link: 'en/introduction' },
-	// 	{ text: 'Page 2', link: 'en/page-2' },
-	// 	{ text: 'Page 3', link: 'en/page-3' },
+	'zh-CN': [
+		{ text: '简介', header: true },
+		{ text: '项目介绍', link: 'zh-CN/intro' },
+	
 
-	// 	{ text: 'Another Section', header: true },
-	// 	{ text: 'Page 4', link: 'en/page-4' },
-	// ],
+		{ text: '商户接入指南', header: true },
+		{ text: '指引', link: 'zh-CN/guide' },
+		{ text: '使用metamask钱包', link: 'zh-CN/other/wallet' },
+		// { text: '订单签名算法(javascript)', link: 'zh-CN/other/signOrder' },
+		// { text: '订单签名算法(服务端)', link: 'zh-CN/other/signOrder2' },
+
+		{ text: '第一步：订单签名', header: true },
+		{ text: '集成服务(推荐)', sub: true, link: 'zh-CN/signOrderService' },
+		{ text: '订单签名(JS)', sub: true, link: 'zh-CN/signOrderJavascript' },
+
+		{ text: '第二步：创建订单',header:true},
+		{ text: '关于订单', link: 'zh-CN/aboutOrder' },
+		{ text: '创建订单', link: 'zh-CN/createOrder' },
+
+		{ text: '第三步：展示收银台', link: 'zh-CN/checksOrder' },
+
+		{ text: '第四步：监听订单状态', link: 'zh-CN/listenOrder' },
+		
+	]
 };
