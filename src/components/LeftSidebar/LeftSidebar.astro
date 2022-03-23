@@ -18,7 +18,6 @@ const sidebarSections = SIDEBAR[langCode].reduce((col, item, i) => {
 	} else {
 		col[col.length - 1].children.push(item);
 	}
-	console.log(col,111)
 	return col;
 }, []);
 ---

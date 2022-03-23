@@ -37,7 +37,7 @@ export const SIDEBAR = {
 	'zh-CN': [
 		{ text: '简介', header: true },
 		{ text: '项目介绍', link: 'zh-CN/intro' },
-	
+
 
 		{ text: '商户接入指南', header: true },
 		{ text: '指引', link: 'zh-CN/guide' },
@@ -49,13 +49,17 @@ export const SIDEBAR = {
 		{ text: '集成服务(推荐)', sub: true, link: 'zh-CN/signOrderService' },
 		{ text: '订单签名(JS)', sub: true, link: 'zh-CN/signOrderJavascript' },
 
-		{ text: '第二步：创建订单',header:true},
+		{ text: '第二步：创建订单', header: true },
 		{ text: '关于订单', link: 'zh-CN/aboutOrder' },
 		{ text: '创建订单', link: 'zh-CN/createOrder' },
 
-		{ text: '第三步：展示收银台', link: 'zh-CN/checksOrder' },
+		{ text: '第三步：收款', header: true },
+		{ text: '关于收银台', link: 'zh-CN/aboutChecks' },
+		{ text: '示例收银台', link: 'zh-CN/checksOrder' },
 
-		{ text: '第四步：监听订单状态', link: 'zh-CN/listenOrder' },
-		
+		{ text: '第四步：订单状态', header: true },
+		{ text: '前端收银台监听', link: 'zh-CN/orderStatusChecks' },
+		{ text: '后端通知回调', link: 'zh-CN/orderStatusNotify' },
+
 	]
 };

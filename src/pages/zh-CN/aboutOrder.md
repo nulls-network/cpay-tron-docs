@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 介绍
 
-创建订单是调用 http 接口请求，需要您对前端知识有一定的了解。首先，您可以访问我们提供的[测试页面](https://dpay-tron-merchant.vercel.app/)查看效果，源码仓库在[这里](https://github.com/nulls-network/dpay-tron-merchant)，供开发参考。
+创建订单是调用 http 接口请求，您可以访问我们提供的[测试页面](https://dpay-tron-merchant.vercel.app/)查看效果，源码仓库在[这里](https://github.com/nulls-network/dpay-tron-merchant)，供开发参考。
 
 ## 订单的运作
 
