@@ -18,6 +18,7 @@ const sidebarSections = SIDEBAR[langCode].reduce((col, item, i) => {
 	} else {
 		col[col.length - 1].children.push(item);
 	}
+	console.log(col)
 	return col;
 }, []);
 ---
@@ -27,7 +28,11 @@ const sidebarSections = SIDEBAR[langCode].reduce((col, item, i) => {
 		{sidebarSections.map((section) => (
 			<li>
 				<div class="nav-group">
-					<h2 class="nav-group-title">{section.text}</h2>
+					{
+						section.link?<h2 class="nav-group-title"><a href={`${Astro.site.pathname}${section.link}`} aria-current={`${currentPageMatch === section.link ? 'page' : 'false'}`}>
+									{section.text}
+								</a></h2>:<h2 class="nav-group-title">{section.text}</h2>
+					}
 					<ul>
 						{section.children.map((child) => (
 							<li class="nav-link">
@@ -84,6 +89,17 @@ const sidebarSections = SIDEBAR[langCode].reduce((col, item, i) => {
 		padding: 0.1rem 1rem;
 		text-transform: uppercase;
 		margin-bottom: 0.5rem;
+	}
+
+	.nav-group-title a{
+		color:#000;
+		text-decoration: none;
+		font-weight: bold;
+		display: block;
+	}
+	.nav-group-title a[aria-current='page']{
+		color: var(--theme-text-accent);
+		font-weight: 600;
 	}
 
 	.nav-link a {

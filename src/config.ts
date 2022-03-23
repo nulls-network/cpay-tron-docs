@@ -45,21 +45,29 @@ export const SIDEBAR = {
 		// { text: '订单签名算法(javascript)', link: 'zh-CN/other/signOrder' },
 		// { text: '订单签名算法(服务端)', link: 'zh-CN/other/signOrder2' },
 
-		{ text: '第一步：订单签名', header: true },
-		{ text: '集成服务(推荐)', sub: true, link: 'zh-CN/signOrderService' },
-		{ text: '订单签名(JS)', sub: true, link: 'zh-CN/signOrderJavascript' },
+		{ text: '1.订单签名', header: true },
+		{ text: '1.1 集成服务(推荐)', sub: true, link: 'zh-CN/signOrderService' },
+		{ text: '1.2 订单签名(JS)', sub: true, link: 'zh-CN/signOrderJavascript' },
 
-		{ text: '第二步：创建订单', header: true },
-		{ text: '关于订单', link: 'zh-CN/aboutOrder' },
-		{ text: '创建订单', link: 'zh-CN/createOrder' },
+		{ text: '2.1 关于订单',header:true, link: 'zh-CN/aboutOrder' },
 
-		{ text: '第三步：收款', header: true },
-		{ text: '关于收银台', link: 'zh-CN/aboutChecks' },
-		{ text: '示例收银台', link: 'zh-CN/checksOrder' },
+		{ text: '3.收款', header: true },
+		{ text: '3.1 关于收银台', link: 'zh-CN/aboutChecks' },
+		{ text: '3.2 示例收银台', link: 'zh-CN/checksOrder' },
 
-		{ text: '第四步：订单状态', header: true },
-		{ text: '前端收银台监听', link: 'zh-CN/orderStatusChecks' },
-		{ text: '后端通知回调', link: 'zh-CN/orderStatusNotify' },
+		{ text: '4.订单状态', header: true },
+		{ text: '4.1 前端收银台监听', link: 'zh-CN/orderStatusChecks' },
+		{ text: '4.2 后端通知回调', link: 'zh-CN/orderStatusNotify' },
 
+		{ text: '5.商户后台', header: true },
+		{ text: '5.1 关于提现', link: 'zh-CN/aboutWithdraw' },
+	
+
+		{ text: '6.API', header: true },
+		{ text: '6.1 创建订单', link: 'zh-CN/createOrder' },
+		{ text: '6.2 查询订单状态', link: 'zh-CN/queryOrderStatus' },
+		{ text: '6.3 查询可提现余额', link: 'zh-CN/queryAssets' },
+		{ text: '6.4 查询总余额', link: 'zh-CN/queryTotalAssets' },
+		{ text: '6.5 提现接口', link: 'zh-CN/doWithdraw' },
 	]
 };

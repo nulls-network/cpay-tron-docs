@@ -53,3 +53,9 @@ https://test-notify.vercel.app/api/index
 ### 3.notify回调
 
 ![notify](/notify.png)
+
+### 4.notify订单验签
+
+使用集成服务，验证订单sign签名，解出系统指定的公钥为0x8a03fde2d906217dd9d2ae26f66ec5d9635945b7
+
+![recover-notify](/recover-notify.png)
