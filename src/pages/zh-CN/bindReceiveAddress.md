@@ -44,3 +44,7 @@ layout: ../../layouts/MainLayout.astro
 
 ![sign-bind](/bindAddress.png)
 
+### 3.转入通知
+
+![notify-bind](/notify-bindAddress.png)
+
