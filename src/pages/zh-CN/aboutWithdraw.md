@@ -1,6 +1,6 @@
 ---
-title: 关于提现
-description: 关于提现
+title: 提现说明
+description: 提现说明
 layout: ../../layouts/MainLayout.astro
 ---
 
@@ -10,6 +10,8 @@ layout: ../../layouts/MainLayout.astro
 
 系统通过私钥签名数据验证商户身份，进而发起提现流程。
 
-## 可提现余额
+## 提现流程
 
-系统采用**D+1**结算规则，因此产生了未结算的资金显示为冻结状态。所以通过api直接调用时，首先需要查询可提现余额。
+先查询[可提现余额](/zh-CN/queryAssets)，后调用[提现接口](/zh-CN/doWithdraw)。
+
+系统采用**D+1**结算规则，因此那些未结算的资金显示为冻结状态。所以需要查询可提现余额。

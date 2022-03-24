@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 调用订单创建接口
 
-**url**: https://api-tron-v1.dpay.systems/v1/order/create
+**url**: [baseUrl](/zh-CN/config)/v1/order/create
 
 **method**: POST
 
@@ -14,15 +14,15 @@ layout: ../../layouts/MainLayout.astro
 
 **body**:
 
-| 参数 类型    | 类型   | 描述                                                                 |
-| ------------ | ------ | -------------------------------------------------------------------- |
-| out_order_no | string | 订单号（由商家自定义）                                               |
-| pay_chain    | string | 区块链描述（指定 tron）                                              |
-| pay_token    | string | 支付币种合约（指定 USDT: TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t）        |
-| pay_amount   | string | 支付金额（无需带币种精度，如：1.2）                                  |
-| notify       | string | 支付成功通知地址（如：https://google.com 等 URL 地址 ）              |
-| signature    | string | 以上字段用私钥签名的后的数据([查看签名指引](/zh-CN/other/signOrder)) |
-| pub_key      | string | 签名所用的公钥                                                       |
+| 参数 类型    | 类型   | 描述                                                                     |
+| ------------ | ------ | ------------------------------------------------------------------------ |
+| out_order_no | string | 订单号（由商家自定义）                                                   |
+| pay_chain    | string | 区块链描述（指定 tron）                                                  |
+| pay_token    | string | 支付币种合约（指定 USDT: TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t）            |
+| pay_amount   | string | 支付金额（无需带币种精度，如：1.2）                                      |
+| notify       | string | 支付成功通知地址,系统对该URL发送POST请求  |
+| signature    | string | 以上字段用私钥签名的后的数据([查看签名指引](/zh-CN/signOrderJavascript)) |
+| pub_key      | string | 签名所用的公钥                                                           |
 
 **请求响应体**：
 

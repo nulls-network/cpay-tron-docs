@@ -37,7 +37,7 @@ sudo chmod a+x ./MAC_ARM64
 
 创建订单
 
-URL: https://api-tron-v1.dpay.systems/v1/order/create
+URL: [baseUrl](/zh-CN/config)/v1/order/create
 
 ![create](/order.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 使用Metamask
 description: 使用Metamask
-layout: ../../../layouts/MainLayout.astro
+layout: ../../layouts/MainLayout.astro
 ---
 
 ## Metamask钱包
