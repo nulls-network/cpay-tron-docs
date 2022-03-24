@@ -7,7 +7,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 接口
 
-**url**: [baseUrl](/zh-CN/config)/v1/bing/merchantBingAddress
+**url**: [[baseUrl]](/zh-CN/config)/v1/bing/merchantBingAddress
 
 **method**: POST
 

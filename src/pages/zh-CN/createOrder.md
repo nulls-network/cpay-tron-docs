@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 调用订单创建接口
 
-**url**: [baseUrl](/zh-CN/config)/v1/order/create
+**url**: [[baseUrl]](/zh-CN/config)/v1/order/create
 
 **method**: POST
 

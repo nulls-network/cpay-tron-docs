@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 查询商户余额接口
 
-**url**: [baseUrl](/zh-CN/config)/v1/merchant/balanceOf
+**url**: [[baseUrl]](/zh-CN/config)/v1/merchant/balanceOf
 
 **method**: POST
 

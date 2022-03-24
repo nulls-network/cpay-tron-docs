@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 提现接口
 
-**url**: [baseUrl](/zh-CN/config)/v1/merchant/balanceOf
+**url**: [[baseUrl]](/zh-CN/config)/v1/merchant/balanceOf
 
 **method**: POST
 
@@ -37,7 +37,7 @@ layout: ../../layouts/MainLayout.astro
 
 ### 3.调用提现
 
-![assets](/sign-withdraw.png)
+![assets](/withdraw.png)
 
 ### 4.提现到账
 

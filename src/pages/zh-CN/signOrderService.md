@@ -37,7 +37,7 @@ sudo chmod a+x ./MAC_ARM64
 
 创建订单
 
-URL: [baseUrl](/zh-CN/config)/v1/order/create
+URL: [](/zh-CN/config)/v1/order/create
 
 ![create](/order.png)
 

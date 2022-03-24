@@ -16,7 +16,7 @@ got_amount 大于或等于订单金额
 
 ## 接口说明
 
-**url**: [baseUrl](/zh-CN/config)/v1/order/$uuid
+**url**: [[baseUrl]](/zh-CN/config)/v1/order/$uuid
 
 **param**: uuid 订单标识号（在创建订单接口中返回）
 
