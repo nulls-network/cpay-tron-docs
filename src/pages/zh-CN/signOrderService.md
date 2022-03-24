@@ -11,20 +11,20 @@ layout: ../../layouts/MainLayout.astro
 根据您当前的操作系统，选择对应的文件下载，[下载地址](https://github.com/nulls-network/sign-order-service/releases)
 
 ## 使用示例（macOs M1）
-1.下载对应文件 MAC_ARM64
+### 1.下载对应文件 MAC_ARM64
 
-2.增加执行权限
+### 2.增加执行权限
 ```code
 sudo chmod a+x ./MAC_ARM64
 ```
 
-3.运行
+### 3.运行
 ```code
 #可指定端口参数，默认8080
 ./MAC_ARM64 8080
 ```
 
-4.测试      
+## 测试      
 
 订单签名，data为订单参数，确保传入顺序一致
 依次为：**订单号、区块链、币种合约、支付金额、通知回调地址**  
