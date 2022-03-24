@@ -16,8 +16,8 @@ layout: ../../layouts/MainLayout.astro
 
 | 参数    | 类型   | 描述                                                                    |
 | ------- | ------ | ----------------------------------------------------------------------- |
-| user    | string | 商户钱包地址（hex 格式，如 0x669a9457817Ae9A24527E77C9a4629A4bF65D772） |
-| chainId | string | 指定 100000001 ，即波场主网                                             |
+| merchant    | string | 商户钱包地址（hex 格式，如 0x669a9457817Ae9A24527E77C9a4629A4bF65D772） |
+| chain | string | 指定 tron ，即波场主网                                             |
 | token   | string | 指定 TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t ，即主网 USDT                   |
 
 **请求响应体**：
