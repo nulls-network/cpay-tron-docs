@@ -24,18 +24,20 @@ sudo chmod a+x ./MAC_ARM64
 ./MAC_ARM64 8080
 ```
 
-## 测试      
+## 测试  
+该工具还可以用于其他需要签名的场景，如：[绑定用户收款地址](/zh-CN/bindReceiveAddress) 、[提现](/zh-CN/doWithdraw)
 
-订单签名，data为订单参数，确保传入顺序一致
-依次为：**订单号、区块链、币种合约、支付金额、通知回调地址**  
+### 订单签名
+data为订单参数，确保传入顺序一致,依次为：**订单号、区块链、币种合约、支付金额、通知回调地址**  
 
 ![sign](/sign.png)
 
-订单验签（返回签名所使用的钱包账户）    
+### 订单验签
+返回签名所使用的钱包账户
     
 ![recover](/recover.png)
 
-创建订单
+### 创建订单
 
 URL: [](/zh-CN/config)/v1/order/create
 
