@@ -57,7 +57,8 @@ export const SIDEBAR = {
 
 		{ text: '4.订单状态', header: true },
 		{ text: '4.1 前端监听订单状态', link: 'zh-CN/orderStatusFrontend' },
-		{ text: '4.2 后端通知回调', link: 'zh-CN/orderStatusNotify' },
+		{ text: '4.2 后端订单通知回调', link: 'zh-CN/orderStatusNotify' },
+		{ text: '4.3 后端充值通知回调', link: 'zh-CN/bindOrderNotify' },
 
 		{ text: '5.提现说明', header: true, link: 'zh-CN/aboutWithdraw' },
 
@@ -67,7 +68,7 @@ export const SIDEBAR = {
 		{ text: '6.2 轮询订单状态', link: 'zh-CN/queryOrderStatus' },
 		{ text: '6.3 查询商户余额', link: 'zh-CN/queryAssets' },
 		{ text: '6.4 提现接口', link: 'zh-CN/doWithdraw' },
-		{ text: '6.5 绑定用户收款地址', link: 'zh-CN/bindReceiveAddress' },
+		{ text: '6.5 绑定用户收款地址(充值)', link: 'zh-CN/bindReceiveAddress' },
 		{ text: '6.5 汇率工具', link: 'zh-CN/exchangeFee' },
 	]
 };
