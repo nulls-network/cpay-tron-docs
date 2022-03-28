@@ -42,6 +42,7 @@ export const SIDEBAR = {
 		{ text: '商户接入指南', header: true },
 		{ text: '指引', link: 'zh-CN/guide' },
 		{ text: '配置', link: 'zh-CN/config' },
+		{ text: '术语释义', link: 'zh-CN/theTerms' },
 		{ text: '使用metamask钱包', link: 'zh-CN/useWallet' },
 
 		{ text: '1.订单签名', header: true },
