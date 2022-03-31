@@ -69,7 +69,8 @@ export const SIDEBAR = {
 		{ text: '6.2 轮询订单状态', link: 'zh-CN/queryOrderStatus' },
 		{ text: '6.3 查询商户余额', link: 'zh-CN/queryAssets' },
 		{ text: '6.4 提现接口', link: 'zh-CN/doWithdraw' },
-		{ text: '6.5 绑定用户收款地址(充值)', link: 'zh-CN/bindReceiveAddress' },
-		{ text: '6.5 汇率工具', link: 'zh-CN/exchangeFee' },
+		{ text: '6.5 查询提现结果', link: 'zh-CN/queryWithdrawResult' },
+		{ text: '6.6 绑定用户收款地址(充值)', link: 'zh-CN/bindReceiveAddress' },
+		{ text: '6.7 汇率工具', link: 'zh-CN/exchangeFee' },
 	]
 };
