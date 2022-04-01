@@ -39,7 +39,7 @@ data为订单参数，确保传入顺序一致,依次为：**订单号、区块�
 
 ### 创建订单
 
-URL: [](/zh-CN/config)/v1/order/create
+URL: /v1/order/create
 
 ![create](/order.png)
 

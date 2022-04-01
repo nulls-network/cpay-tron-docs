@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 接口
 
-**请求地址**: [[baseUrl]](/zh-CN/config)/v1/bing/merchantBingAddress
+**请求地址**: [[baseUrl]](/zh-CN/variables)/v1/bing/merchantBingAddress
 
 **请求方法**: POST
 

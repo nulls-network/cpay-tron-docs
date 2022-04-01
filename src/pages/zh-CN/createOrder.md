@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 接口说明
 
-**请求地址**: [[baseUrl]](/zh-CN/config)/v1/order/create
+**请求地址**: [[baseUrl]](/zh-CN/variables)/v1/order/create
 
 **请求方法**: POST
 

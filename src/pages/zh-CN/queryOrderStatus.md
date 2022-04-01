@@ -16,7 +16,7 @@ got_amount 大于或等于订单金额
 
 ## 接口说明
 
-**请求地址**: [[baseUrl]](/zh-CN/config)/v1/order/$uuid
+**请求地址**: [[baseUrl]](/zh-CN/variables)/v1/order/$uuid
 
 **请求参数**: uuid 订单标识号（在创建订单接口中返回）
 
@@ -42,7 +42,7 @@ got_amount 大于或等于订单金额
 
 uuid: 20c3b1f6-3029-42b9-838c-4841e2686ade
 
-[[baseUrl]](/zh-CN/config)/api/v1/order/20c3b1f6-3029-42b9-838c-4841e2686ade
+[[baseUrl]](/zh-CN/variables)/api/v1/order/20c3b1f6-3029-42b9-838c-4841e2686ade
 
 ### 请求响应
 

@@ -6,7 +6,7 @@ layout: ../../layouts/MainLayout.astro
 
 ## 提现接口
 
-**请求地址**: [[baseUrl]](/zh-CN/config)/v1/merchant/doWithdraw
+**请求地址**: [[baseUrl]](/zh-CN/variables)/v1/merchant/doWithdraw
 
 **请求方法**: POST
 
