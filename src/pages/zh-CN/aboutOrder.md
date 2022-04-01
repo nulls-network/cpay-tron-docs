@@ -6,11 +6,11 @@ layout: ../../layouts/MainLayout.astro
 
 ## 介绍
 
-创建订单是调用 http 接口请求，您可以访问我们提供的[测试页面](https://dpay-tron-merchant.vercel.app/)查看效果，源码仓库在[这里](https://github.com/nulls-network/dpay-tron-merchant)，供开发参考。
+创建订单是调用 http 接口请求，您可以访问我们提供的[订单测试工具](/zh-CN/config)查看效果，源码仓库在[这里](https://github.com/nulls-network/dpay-tron-merchant)，供开发参考。
 
 ## 订单的运作
 
-成功调用创建订单的接口后，系统会随机生成一个收款的钱包地址，以及设定**20 分钟**的收款时限，在时效范围内监听订单的付款状态。订单创建以后，就可以在[商户后台管理系统](https://dpay-admin-v2.vercel.app/dashboard)中查看订单状态了。
+成功调用创建订单的接口后，系统会随机生成一个收款的钱包地址，以及设定**20 分钟**的收款时限，在时效范围内监听订单的付款状态。订单创建以后，就可以在[商户后台管理系统](/zh-CN/config)中查看订单状态了。
 
 商户：这笔订单跟我有什么关系呢？我的收入哪里去了？
 

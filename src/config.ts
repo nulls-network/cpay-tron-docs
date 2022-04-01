@@ -38,39 +38,34 @@ export const SIDEBAR = {
 		{ text: '简介', header: true },
 		{ text: '项目介绍', link: 'zh-CN/intro' },
 
-
-		{ text: '商户接入指南', header: true },
-		{ text: '指引', link: 'zh-CN/guide' },
-		{ text: '配置', link: 'zh-CN/config' },
-		{ text: '术语释义', link: 'zh-CN/theTerms' },
+		{ text: '准备工作', header: true },
 		{ text: '使用metamask钱包', link: 'zh-CN/useWallet' },
 
-		{ text: '1.订单签名', header: true },
-		{ text: '1.1 集成服务(推荐)', sub: true, link: 'zh-CN/signOrderService' },
-		{ text: '1.2 订单签名(JS)', sub: true, link: 'zh-CN/signOrderJavascript' },
+		{ text: '指引', header: true },
+		{ text: '概览', link: 'zh-CN/guide' },
+		{ text: '术语释义', link: 'zh-CN/theTerms' },
 
-		{ text: '2.1 订单说明', header: true, link: 'zh-CN/aboutOrder' },
-
-		{ text: '3.收款', header: true },
-		{ text: '3.1 订单收款', link: 'zh-CN/aboutChecks' },
-		{ text: '3.2 用户固定收款地址', link: 'zh-CN/aboutBindAddress' },
-		{ text: '3.3 示例收银台', link: 'zh-CN/checksOrder' },
-
-		{ text: '4.订单状态', header: true },
-		{ text: '4.1 前端监听订单状态', link: 'zh-CN/orderStatusFrontend' },
-		{ text: '4.2 后端订单通知回调', link: 'zh-CN/orderStatusNotify' },
-		{ text: '4.3 后端充值通知回调', link: 'zh-CN/bindOrderNotify' },
-
-		{ text: '5.提现说明', header: true, link: 'zh-CN/aboutWithdraw' },
+		{ text: '产品网站', link: 'zh-CN/config' },
+		{ text: '订单的运作', link: 'zh-CN/aboutOrder' },
+		{ text: '生成订单签名-使用集成服务', link: 'zh-CN/signOrderService' },
+		{ text: '生成订单签名-使用JS', link: 'zh-CN/signOrderJavascript' },
+		{ text: '收款对接说明', link: 'zh-CN/aboutChecks' },
+		{ text: '绑定固定收款地址', link: 'zh-CN/aboutBindAddress' },
+		{ text: '订单状态轮询', link: 'zh-CN/orderStatusFrontend' },
+		{ text: '订单支付通知', link: 'zh-CN/orderStatusNotify' },
+		{ text: '固定地址充值通知', link: 'zh-CN/bindOrderNotify' },
+		{ text: '示例收银台', link: 'zh-CN/checksOrder' },
+		{ text: '提现说明', link: 'zh-CN/aboutWithdraw' },
 
 
-		{ text: '6.API', header: true },
-		{ text: '6.1 创建订单', link: 'zh-CN/createOrder' },
-		{ text: '6.2 轮询订单状态', link: 'zh-CN/queryOrderStatus' },
-		{ text: '6.3 查询商户余额', link: 'zh-CN/queryAssets' },
-		{ text: '6.4 提现接口', link: 'zh-CN/doWithdraw' },
-		{ text: '6.5 查询提现结果', link: 'zh-CN/queryWithdrawResult' },
-		{ text: '6.6 绑定用户收款地址(充值)', link: 'zh-CN/bindReceiveAddress' },
-		{ text: '6.7 汇率工具', link: 'zh-CN/exchangeFee' },
+		{ text: 'API接口', header: true },
+		{ text: '全局变量', link: 'zh-CN/variables' },
+		{ text: '创建订单', link: 'zh-CN/createOrder' },
+		{ text: '轮询订单状态', link: 'zh-CN/queryOrderStatus' },
+		{ text: '查询商户余额', link: 'zh-CN/queryAssets' },
+		{ text: '提现接口', link: 'zh-CN/doWithdraw' },
+		{ text: '查询提现结果', link: 'zh-CN/queryWithdrawResult' },
+		{ text: '绑定用户收款地址(充值)', link: 'zh-CN/bindReceiveAddress' },
+		{ text: '汇率工具', link: 'zh-CN/exchangeFee' },
 	]
 };
