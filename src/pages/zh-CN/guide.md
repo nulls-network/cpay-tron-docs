@@ -24,10 +24,6 @@ ethers.Wallet.createRandom()
 参考文档：https://docs.ethers.io/v5/api/signer/#Wallet
 
 
-# 商户后台
-```
-https://console-v2.dpay.systems
-```
 ## 使用说明
 后台采用Web3.0架构，在浏览器访问时，需要支持EVM的钱包插件。如Metamask / MataWallet / TrustWallet 等。
 

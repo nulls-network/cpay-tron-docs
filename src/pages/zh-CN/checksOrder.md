@@ -13,7 +13,7 @@ layout: ../../layouts/MainLayout.astro
 **参考代码**：
 
 ```javascript
-const ChecksSiteHref = "https://dpay-tron-checks.vercel.app";
+const ChecksSiteHref = "https://debug-checks.cpay.network";
 const params = new URLSearchParams();
 params.append("pay_token", data.pay_token);
 params.append("deadline", data.deadline);
