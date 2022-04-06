@@ -1,5 +1,6 @@
 ---
 import ThemeToggleButton from './ThemeToggleButton.tsx';
+import LangToggleButton from './LangToggleButton.tsx';
 import * as CONFIG from '../../config';
 const { editHref } = Astro.props;
 const showMoreSection = CONFIG.COMMUNITY_INVITE_URL || editHref;
@@ -58,6 +59,10 @@ const showMoreSection = CONFIG.COMMUNITY_INVITE_URL || editHref;
 </ul>
 <div style="margin: 2rem 0; text-align: center;">
 	<ThemeToggleButton client:visible />
+</div>
+
+<div style="margin: 2rem 0; text-align: center;">
+	<LangToggleButton client:visible />
 </div>
 
 <style>

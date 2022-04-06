@@ -4,16 +4,6 @@ description: 监听订单状态
 layout: ../../layouts/MainLayout.astro
 ---
 
-## 订单状态轮询
-
-#### 1.pay_result 订单状态
-
-pay_result 状态为'normal','success','faild'的其中一种，suceess 表示已成功支付订单
-
-#### 2.got_amount 订单已支付金额
-
-got_amount 大于或等于订单金额
-
 ## 接口说明
 
 **请求地址**: [[baseUrl]](/zh-CN/variables)/v1/order/$uuid

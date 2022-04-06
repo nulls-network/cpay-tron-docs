@@ -18,7 +18,7 @@ layout: ../../layouts/MainLayout.astro
 | ---------------- | ------ | ------------------------------------------------------------------ |
 | merchant_address | string | 商户钱包公钥（hex 格式，如 0x669a...5D772）                        |
 | user_address     | string | 用户钱包地址（base58 格式，如 TLjg42ZBsEU161bBYorRR9yfve8EKTcZL9） |
-| notify           | string | 同订单 notify，通知回调 RUL                                        |
+| notify           | string | 同订单 notify，通知回调 URL                                        |
 | chain_name       | string | 指定 tron                                                          |
 | signature        | string | 以上字段使用私钥进行签名                                           |
 

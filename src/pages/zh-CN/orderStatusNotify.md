@@ -23,22 +23,6 @@ layout: ../../layouts/MainLayout.astro
 }
 ```
 
-## 字段说明
-
-| 字段         | 描述     |
-| ------------ | -------- |
-| uuid         | 订单uuid |
-| out_order_no | 订单编号 |
-| amount       | 订单金额（不带精度） |
-| amount_hex   | 订单金额（带币种精度） |
-| pay_result   | 支付结果（通知） |
-| sign         | 平台对订单签名 |
-
-
-系统会使用固定私钥对订单详情内容进行签名，商户可以通过我们提供的签名集成服务，进行 recover 验签，可以解出来的公钥地址为 0x8A03fDe2D906217DD9D2ae26F66ec5D9635945b7 ，即说明订单内容没有被篡改过。
-
-签名的参数顺序为：uuid，out_order_no，amount，amount_hex，pay_result
-
 
 ## 测试示例
 

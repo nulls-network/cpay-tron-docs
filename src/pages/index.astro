@@ -1,5 +1,21 @@
 <script>
 	// Redirect your homepage to the first page of documentation.
 	// If you have a landing page, remove this script and add it here!
-	window.location.pathname = `/zh-CN/intro`;
+	console.log(window.location.pathname)
+	if (window.location.pathname != '/') {
+
+	} else {
+		let lang = window.navigator.language.slice(0, 2)
+
+		let cacheLang = localStorage.getItem('lang')
+		if(cacheLang!=undefined){
+			lang = cacheLang == 'English'?'en':'zh'
+		}
+
+		if (lang === 'zh') {
+			window.location.pathname = `/zh-CN/intro`;
+		} else {
+			window.location.pathname = `/en/guide`;
+		}
+	}
 </script>

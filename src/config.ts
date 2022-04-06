@@ -65,5 +65,38 @@ export const SIDEBAR = {
 		{ text: '查询提现结果', link: 'zh-CN/queryWithdrawResult' },
 		{ text: '绑定用户收款地址(充值)', link: 'zh-CN/bindReceiveAddress' },
 		{ text: '汇率工具', link: 'zh-CN/exchangeFee' },
+	],
+	'en':[
+		{ text: 'Introduction', header: true },
+		{ text: 'Project Introduction', link: 'en/intro' },
+
+		{ text: 'Prepare', header: true },
+		{ text: 'Use metamask wallet', link: 'en/useWallet' },
+
+		{ text: 'Guide', header: true },
+		{ text: 'Overview', link: 'en/guide' },
+		{ text: 'Definition of terms', link: 'en/theTerms' },
+
+		{ text: 'Product of website', link: 'en/config' },
+		{ text: 'Operation of order', link: 'en/aboutOrder' },
+		{ text: 'Sign order using integration', link: 'en/signOrderService' },
+		{ text: 'Sign order using javascript', link: 'en/signOrderJavascript' },
+		{ text: 'Order receive', link: 'en/aboutChecks' },
+		{ text: 'Bind a fixd payment address', link: 'en/aboutBindAddress' },
+		{ text: 'Order status polling', link: 'en/orderStatusFrontend' },
+		{ text: 'Order payment notification', link: 'en/orderStatusNotify' },
+		{ text: 'Recharge notification', link: 'en/bindOrderNotify' },
+		{ text: 'Example cashier', link: 'en/checksOrder' },
+		{ text: 'Withdraw', link: 'en/aboutWithdraw' },
+
+		{ text: 'API interface', header: true },
+		{ text: 'Global variables', link: 'en/variables' },
+		{ text: 'Create order', link: 'en/createOrder' },
+		{ text: 'Poll order status', link: 'en/queryOrderStatus' },
+		{ text: 'Query merchant balance', link: 'en/queryAssets' },
+		{ text: 'Withdraw', link: 'en/doWithdraw' },
+		{ text: 'Withdraw result', link: 'en/queryWithdrawResult' },
+		{ text: "Bind payment address", link: 'en/bindReceiveAddress' },
+		{ text: "Exchage rate tool", link: 'en/exchangeFee' },
 	]
 };
