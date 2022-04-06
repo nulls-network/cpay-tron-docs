@@ -31,7 +31,7 @@ layout: ../../layouts/MainLayout.astro
 In the example, notify url is the interface used for testing, and print out the request body log
 https://test-notify.vercel.app/api/index
 
-![order-notify](/order-notify.png)
+![order-notify](/generateOrder-en.png)
 
 ### 2.The payment is successful
 

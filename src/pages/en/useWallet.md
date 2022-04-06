@@ -10,10 +10,10 @@ layout: ../../layouts/MainLayout.astro
 
 #### 2.Copy the public key
 
-![wallet](/wallet1.png)
+![wallet](/exportPubkey-en.png)
 
 #### 3.Export the private key
 
-![wallet](/wallet2.png)
+![wallet](/account-detail-en.png)
 
-![wallet](/wallet3.png)
+![wallet](/exportPrivateKey-en.png)
