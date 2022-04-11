@@ -52,7 +52,6 @@ The order is: order number, blockchain, currency contract, payment amount, notif
   "pay_amount": "0.3",
   "notify": "http://localhost",
   "signature": "0x3eeb1f57fad2c78b2115c84cefac747fa75578e56f35aa11b0888fc53129be6c272ae826051a84d91b9080e4479d36d6f02d6380189ff2bb1d1cc2f57fac8ea11c",
-  "privateKey": "f78494eb224f875d7e352a2b017304e11e6a3ce94af57b373ae82a73b3496cdd",
   "pub_key": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d"
 }
 ```
