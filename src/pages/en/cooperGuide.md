@@ -6,10 +6,9 @@ layout: ../../layouts/MainLayout.astro
 
 ## Docking process
 
-![flow](/public/flow-en.jpeg)
+![flow](/flow-en.jpeg)
 
 ## Business guide
-For 'merchant access confirmation', please go to <a href="http://www.qq.com" target="_blank">qq.com</a> fill in and submit.
 - Manually create a collection order.    
 > Use<a href="https://debug-tools.cpay.network/" target="_blank">the order generation tool</a>for order creation.
 

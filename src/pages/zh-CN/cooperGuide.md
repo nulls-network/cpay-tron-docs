@@ -6,10 +6,9 @@ layout: ../../layouts/MainLayout.astro
 
 ## 对接流程
 
-![flow](/public/flow.jpeg)
+![flow](/flow.jpeg)
 
 ## 业务对接
-《商户接入确认单》请前往<a href='http://www.qq.com' target='_blank'>www.qq.com</a>填写提交
 - 手工创建收款订单。    
 > 使用<a href="https://debug-tools.cpay.network/" target="_blank">订单生成工具</a>进行订单创建。
 
