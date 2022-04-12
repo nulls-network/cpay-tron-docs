@@ -33,17 +33,18 @@ export const KNOWN_LANGUAGES = {
 
 export const SIDEBAR = {
 	'zh-CN': [
-		{ text: '简介', header: true },
-		{ text: '项目介绍', link: 'zh-CN/intro' },
-
-		{ text: '准备工作', header: true },
-		{ text: '使用metamask钱包', link: 'zh-CN/useWallet' },
-
 		{ text: '指引', header: true },
+		{ text: '业务说明', link: 'zh-CN/projectGuide' },
+		{ text: '收费说明', link: 'zh-CN/aboutFee' },
+		{ text: '商户对接流程', link: 'zh-CN/cooperGuide' },
+		{ text: '产品网站', link: 'zh-CN/config' },
+
+
+		{ text: '技术对接', header: true },
 		{ text: '概览', link: 'zh-CN/guide' },
+		{ text: '使用metamask钱包', link: 'zh-CN/useWallet' },
 		{ text: '术语释义', link: 'zh-CN/theTerms' },
 
-		{ text: '产品网站', link: 'zh-CN/config' },
 		{ text: '订单的运作', link: 'zh-CN/aboutOrder' },
 		{ text: '生成订单签名-使用集成服务', link: 'zh-CN/signOrderService' },
 		{ text: '生成订单签名-使用JS', link: 'zh-CN/signOrderJavascript' },
@@ -67,17 +68,18 @@ export const SIDEBAR = {
 		{ text: '汇率工具', link: 'zh-CN/exchangeFee' },
 	],
 	'en':[
-		{ text: 'Introduction', header: true },
-		{ text: 'Project Introduction', link: 'en/intro' },
-
-		{ text: 'Prepare', header: true },
-		{ text: 'Use metamask wallet', link: 'en/useWallet' },
-
 		{ text: 'Guide', header: true },
+		{ text: 'Business description', link: 'en/projectGuide' },
+		{ text: 'About fee', link: 'en/aboutFee' },
+		{ text: 'Docking process', link: 'en/cooperGuide' },
+		{ text: 'Product of website', link: 'en/config' },
+
+
+		{ text: 'Technical guide', header: true },
 		{ text: 'Overview', link: 'en/guide' },
+		{ text: 'Use metamask wallet', link: 'en/useWallet' },
 		{ text: 'Definition of terms', link: 'en/theTerms' },
 
-		{ text: 'Product of website', link: 'en/config' },
 		{ text: 'Operation of order', link: 'en/aboutOrder' },
 		{ text: 'Sign order using integration', link: 'en/signOrderService' },
 		{ text: 'Sign order using javascript', link: 'en/signOrderJavascript' },
