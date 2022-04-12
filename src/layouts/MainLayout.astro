@@ -119,3 +119,23 @@ const currentFile = `src/pages${currentPage.replace(/\/$/, '')}.md`;
 		</main>
 	</body>
 </html>
+
+<script is:global>
+	let lang = window.navigator.language.slice(0, 2)
+	let path = window.location.pathname
+	if(!localStorage.getItem('lang')){
+		if(lang == 'zh'){
+			if(path.includes('/en')){
+				window.location.pathname = path.replace('/en','/zh-CN')
+			}
+			localStorage.setItem('lang','中文')
+		}
+		else{
+			if(path.includes('/zh-CN')){
+				window.location.pathname = path.replace('/zh-CN','/en')
+			}
+			localStorage.setItem('lang','English')
+		}
+	}
+	
+</script>

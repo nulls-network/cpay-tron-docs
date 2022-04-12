@@ -94,7 +94,7 @@ p {
 }
 
 .content ul {
-	line-height: 1.1em;
+	line-height: 1.6;
 }
 
 p,
@@ -388,4 +388,12 @@ h2.heading {
 
 :target {
 	scroll-margin: calc(var(--theme-sidebar-offset, 5rem) + 2rem) 0 2rem;
+}
+
+.cus-table tr:nth-of-type(odd){
+	background:transparent;
+}
+
+.cus-table tr.bg{
+	background: var(--theme-bg-hover);
 }

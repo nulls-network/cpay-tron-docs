@@ -26,14 +26,12 @@ const LangToggle: FunctionalComponent = () => {
     if (first.current) {
       first.current = false;
     } else {
-      console.log(lang)
       let t
       if (lang === "English") {
         t=window.location.href.replace('/zh-CN','/en')
       } else {
         t=window.location.href.replace('/en','/zh-CN')
       }
-      console.log(t)
       window.location.href = t
 
     }
