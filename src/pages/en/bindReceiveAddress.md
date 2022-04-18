@@ -14,22 +14,22 @@ layout: ../../layouts/MainLayout.astro
 
 **Request body**:
 
-| Parameter        | Type   | Description                                                                     |
-| ---------------- | ------ | ------------------------------------------------------------------------------- |
-| merchant_address | string | Merchant wallet public key (hex format, such as 0x669a…5D772)                   |
-| user_address     | string | User wallet address (base58 format, such as TLjg42ZBsEU161bBYorRR9yfve8EKTcZL9) |
-| notify           | string | Same as order notify, notification callback URL                                 |
-| chain_name       | string | Specify string 'tron'                                                           |
-| signature        | string | The above fields are signed with the private key                                |
+| Parameter        | Type   | Description                                                   |
+| ---------------- | ------ | ------------------------------------------------------------- |
+| merchant_address | string | Merchant wallet public key (hex format, such as 0x669a…5D772) |
+| user_id          | string | User ID                                                       |
+| notify           | string | Same as order notify, notification callback URL               |
+| chain_name       | string | Specify string 'tron'                                         |
+| signature        | string | The above fields are signed with the private key              |
 
 **Response body**：
 
-| Filed            | Description          |
-| ---------------- | -------------------- |
-| merchant_address | Merchant address             |
-| user_address     | User address             |
+| Filed            | Description                      |
+| ---------------- | -------------------------------- |
+| merchant_address | Merchant address                 |
+| user_id          | User ID                          |
 | rec_address      | The user's bound payment address |
-| uuid             | Unique number             |
+| uuid             | Unique number                    |
 
 ## Example
 
@@ -38,10 +38,10 @@ layout: ../../layouts/MainLayout.astro
 ```json
 {
   "merchant_address": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d",
-  "user_address": "TLjg42ZBsEU161bBYorRR9yfve8EKTcZL9",
-  "notify": "https://test-notify.vercel.app/api/index",
+  "user_id": "QQ1234",
   "chain_name": "tron",
-  "signature": "0xf9fd2dfdc6b1a162a2c371355a86350a8ac7c935514b0b939cd1e583757eaa7a10642c10cf1186d34390f0d816d7ba87e7e7c06a7c14c6aad524b921724dc0a51b"
+  "notify": "https://test-notify.vercel.app/api/index",
+  "signature": "0x184b1e0301d4298adbcd68d4e198fb0af254e1978515d03972bced82493c13024c887843e2cad32b0772ef0429dee987bf5ebe76eb00d1bc6b2630e64b0392d81c"
 }
 ```
 
@@ -53,23 +53,23 @@ layout: ../../layouts/MainLayout.astro
   "message": "ok",
   "data": {
     "merchant_address": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d",
-    "user_address": "TLjg42ZBsEU161bBYorRR9yfve8EKTcZL9",
-    "rec_address": "TJNdmSG6Ra1sRK3FbPDKEckRdVSwvnzQQz",
-    "uuid": "a86ef090-7960-4322-9cea-46ac17d90eba"
+    "user_id": "QQ1234",
+    "rec_address": "TT7o88adWWCEzn9e5JMknFy9z7smtMd2QA",
+    "uuid": "8070687a-eb54-4f54-a24f-51bcebb7a1f6"
   }
 }
 ```
 
 ## Testing
 
-### 1.Sign（Using integration service）
+### 1.Use testing tool
 
-![sign](/sign-bindAddress.png)
+![sign](/bind-api-en.png)
 
-### 2.Call api
+### 2.Transfer
 
-![sign-bind](/bindAddress.png)
+![sign-bind](/bind-transfer.png)
 
 ### 3.Recharge notification
 
-![notify-bind](/notify-bindAddress.png)
+![notify-bind](/bind-notice.png)

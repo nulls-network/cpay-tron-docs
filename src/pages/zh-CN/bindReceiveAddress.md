@@ -14,20 +14,20 @@ layout: ../../layouts/MainLayout.astro
 
 **请求体**:
 
-| 参数             | 类型   | 描述                                                               |
-| ---------------- | ------ | ------------------------------------------------------------------ |
-| merchant_address | string | 商户钱包公钥（hex 格式，如 0x669a...5D772）                        |
-| user_address     | string | 用户钱包地址（base58 格式，如 TLjg42ZBsEU161bBYorRR9yfve8EKTcZL9） |
-| notify           | string | 同订单 notify，通知回调 URL                                        |
-| chain_name       | string | 指定 tron                                                          |
-| signature        | string | 以上字段使用私钥进行签名                                           |
+| 参数             | 类型   | 描述                                        |
+| ---------------- | ------ | ------------------------------------------- |
+| merchant_address | string | 商户钱包公钥（hex 格式，如 0x669a...5D772） |
+| user_id          | string | 用户 ID                                     |
+| notify           | string | 同订单 notify，通知回调 URL                 |
+| chain_name       | string | 指定 tron                                   |
+| signature        | string | 以上字段使用私钥进行签名                    |
 
 **请求响应体**：
 
 | 字段             | 描述                 |
 | ---------------- | -------------------- |
 | merchant_address | 商户地址             |
-| user_address     | 用户地址             |
+| user_id          | 用户 ID              |
 | rec_address      | 该用户的绑定收款地址 |
 | uuid             | 唯一编号             |
 
@@ -38,10 +38,10 @@ layout: ../../layouts/MainLayout.astro
 ```json
 {
   "merchant_address": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d",
-  "user_address": "TLjg42ZBsEU161bBYorRR9yfve8EKTcZL9",
-  "notify": "https://test-notify.vercel.app/api/index",
+  "user_id": "QQ1234",
   "chain_name": "tron",
-  "signature": "0xf9fd2dfdc6b1a162a2c371355a86350a8ac7c935514b0b939cd1e583757eaa7a10642c10cf1186d34390f0d816d7ba87e7e7c06a7c14c6aad524b921724dc0a51b"
+  "notify": "https://test-notify.vercel.app/api/index",
+  "signature": "0x184b1e0301d4298adbcd68d4e198fb0af254e1978515d03972bced82493c13024c887843e2cad32b0772ef0429dee987bf5ebe76eb00d1bc6b2630e64b0392d81c"
 }
 ```
 
@@ -53,23 +53,23 @@ layout: ../../layouts/MainLayout.astro
   "message": "ok",
   "data": {
     "merchant_address": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d",
-    "user_address": "TLjg42ZBsEU161bBYorRR9yfve8EKTcZL9",
-    "rec_address": "TJNdmSG6Ra1sRK3FbPDKEckRdVSwvnzQQz",
-    "uuid": "a86ef090-7960-4322-9cea-46ac17d90eba"
+    "user_id": "QQ1234",
+    "rec_address": "TT7o88adWWCEzn9e5JMknFy9z7smtMd2QA",
+    "uuid": "8070687a-eb54-4f54-a24f-51bcebb7a1f6"
   }
 }
 ```
 
 ## 测试
 
-### 1.签名（使用的集成服务）
+### 1.使用测试工具
 
-![sign](/sign-bindAddress.png)
+![sign](/bind-api.png)
 
-### 2.请求绑定接口
+### 2.转账交易
 
-![sign-bind](/bindAddress.png)
+![sign-bind](/bind-transfer.png)
 
 ### 3.充值通知
 
-![notify-bind](/notify-bindAddress.png)
+![notify-bind](/bind-notice.png)

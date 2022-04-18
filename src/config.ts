@@ -46,8 +46,8 @@ export const SIDEBAR = {
 		{ text: '术语释义', link: 'zh-CN/theTerms' },
 
 		{ text: '订单的运作', link: 'zh-CN/aboutOrder' },
-		{ text: '生成订单签名-使用集成服务', link: 'zh-CN/signOrderService' },
-		{ text: '生成订单签名-使用JS', link: 'zh-CN/signOrderJavascript' },
+		{ text: '生成签名-使用集成服务', link: 'zh-CN/signOrderService' },
+		{ text: '生成签名-使用JS', link: 'zh-CN/signOrderJavascript' },
 		{ text: '收款对接说明', link: 'zh-CN/aboutChecks' },
 		{ text: '绑定固定收款地址', link: 'zh-CN/aboutBindAddress' },
 		{ text: '订单状态轮询', link: 'zh-CN/orderStatusFrontend' },
@@ -64,7 +64,7 @@ export const SIDEBAR = {
 		{ text: '查询商户余额', link: 'zh-CN/queryAssets' },
 		{ text: '提现接口', link: 'zh-CN/doWithdraw' },
 		{ text: '查询提现结果', link: 'zh-CN/queryWithdrawResult' },
-		{ text: '绑定用户收款地址(充值)', link: 'zh-CN/bindReceiveAddress' },
+		{ text: '绑定用户收款地址', link: 'zh-CN/bindReceiveAddress' },
 		{ text: '汇率工具', link: 'zh-CN/exchangeFee' },
 	],
 	'en':[
@@ -81,8 +81,8 @@ export const SIDEBAR = {
 		{ text: 'Definition of terms', link: 'en/theTerms' },
 
 		{ text: 'Operation of order', link: 'en/aboutOrder' },
-		{ text: 'Sign order using integration', link: 'en/signOrderService' },
-		{ text: 'Sign order using javascript', link: 'en/signOrderJavascript' },
+		{ text: 'Generate sign using integration', link: 'en/signOrderService' },
+		{ text: 'Generate sign using javascript', link: 'en/signOrderJavascript' },
 		{ text: 'Order receive', link: 'en/aboutChecks' },
 		{ text: 'Bind a fixd payment address', link: 'en/aboutBindAddress' },
 		{ text: 'Order status polling', link: 'en/orderStatusFrontend' },
