@@ -16,13 +16,15 @@ See [Binding User's Payment Address](/en/bindReceiveAddress)
 
 ```json
 {
-  "uuid": "673c52e3-0619-44da-b523-d21e86f2b99c",
-  "merchant_address": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d",
-  "user_address": "TJbEAogwhGyUGFYTvnqKnRUyK5AKaYCoud",
-  "rec_address": "TPb37NeuvgxpjTn5y5uZz8ujp3oedg2Mm3",
-  "out_order_no": "1648195928579",
-  "rec_amount": "0.012",
-  "rec_amount_nd": "12000",
-  "sign": "0x6eb8a865fb103c9dcc1168220cb3d2b57a78a4521fffa4f21a28aed2ff1c22e305cf7251745311dd86917ea84942d276b138efc4fd260829c2e408e47a571e1e1b"
+  "out_order_no": "1650256013709",
+  "uuid": "a4909c34-d137-482b-9c51-b4a9ab8ec2eb",
+  "type": "recharge",
+  "amount_hex": "131000",
+  "got_amount": "0.1310",
+  "pay_result": "success",
+  "bing_uuid": "8070687a-eb54-4f54-a24f-51bcebb7a1f6",
+  "user_id": "QQ1234",
+  "token": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+  "sign": "0x05f4264d6af47c9aee0b6824ab0230cde3203e4cfdd3d2325aeace57f29ca99558065ab7a5e492a90e8ab341512c7adc988c906ff29194d0b929cab466cb3a561c"
 }
 ```
