@@ -1,70 +1,32 @@
 ---
-title: Order sign using javascript
-description: Order sign using javascript
+title: Generate sign(JS)
+description: Generate sign(JS)
 layout: ../../layouts/MainLayout.astro
 ---
-## Sign the order
+## 说明
 
-The merchant uses its own private key (private key of the receiving account) to sign the order information data, to prevent the order data from being tampered with, and to confirm the merchant to which the order belongs.
+Using nodejs，dependency ethers.js.    
+On the one hand, to ensure that the order data is not tampered with, on the other hand, the signature data can be used to unlock the signer's public key to confirm the identity of the merchant.
+## How to use
 
-Need to pay attention to the guaranteed order of toBytes method parameter passing.
+https://github.com/nulls-network/sign-tool-nodejs.git
 
-## Reference code
+## Example
+### Generate sign
 
-```javascript
-import { ethers } from 'ethers'
-
-const { concat, keccak256, toUtf8Bytes, SigningKey, joinSignature } = ethers.utils
-
-
-function toBytes(...params) {
-  const v = []
-  for (const p of params) {
-    if (typeof (p) === 'string')
-      v.push(toUtf8Bytes(p))
-
-    else
-      v.push(toUtf8Bytes(String(p)))
-  }
-  return keccak256(concat(v))
-}
-
-export async function SignOrder(orderInfo = {}, privateKey) {
-  try {
-    const bytesData = toBytes(
-      orderInfo.out_order_no,
-      orderInfo.pay_chain,
-      orderInfo.pay_token,
-      orderInfo.pay_amount,
-      orderInfo.notify,
-    )
-
-    const signer = new SigningKey(`0x${privateKey}`)
-
-    const signature = signer.signDigest(bytesData)
-
-    return joinSignature(signature)
-  }
-  catch (error) {
-    console.log(error)
-  }
-}
+```
+  npm run sign
 ```
 
-## Order verification
+![sign](/sign-tool1.png)
+### Reover public key
 
-The result is your public key.
-
-```javascript
-
-export async function Recover(bytesData, signature) {
-  try {
-    const sig = ethers.utils.splitSignature(signature)
-    const recovered = ethers.utils.recoverAddress(bytesData, sig)
-    return recovered
-  }
-  catch (e) {
-    return null
-  }
-}
 ```
+  npm run recover
+```
+![sign](/sign-tool2.png)
+
+
+
+
+

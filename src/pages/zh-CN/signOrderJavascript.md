@@ -1,68 +1,33 @@
 ---
-title: 订单签名(JS)
-description: 订单签名(JS)
+title: 生成签名(JS)
+description: 生成签名(JS)
 layout: ../../layouts/MainLayout.astro
 ---
-## 订单签名
+## 说明
 
-商户使用自己的**私钥** (收款账户私钥) 对订单信息数据进行签名，防止订单数据被篡改，以及确认订单所属商户
+使用nodejs，依赖ethers.js库，生成签名数据。
+对接口参数使用商户私钥进行签名，一方面为了确保订单数据没有被篡改，一方面可以用过签名数据解出签名者公钥，确认商户身份。
 
-需要注意 toBytes 方法参数传递**保证顺序**
+## 如何使用
 
-## 签名参考
+参考工具地址： https://github.com/nulls-network/sign-tool-nodejs.git
 
-```javascript
-import { ethers } from 'ethers'
+## 使用示例
+### 生成签名：
 
-const { concat, keccak256, toUtf8Bytes, SigningKey, joinSignature } = ethers.utils
-
-
-function toBytes(...params) {
-  const v = []
-  for (const p of params) {
-    if (typeof (p) === 'string')
-      v.push(toUtf8Bytes(p))
-
-    else
-      v.push(toUtf8Bytes(String(p)))
-  }
-  return keccak256(concat(v))
-}
-
-export async function SignOrder(orderInfo = {}, privateKey) {
-  try {
-    const bytesData = toBytes(
-      orderInfo.out_order_no,
-      orderInfo.pay_chain,
-      orderInfo.pay_token,
-      orderInfo.pay_amount,
-      orderInfo.notify,
-    )
-
-    const signer = new SigningKey(`0x${privateKey}`)
-
-    const signature = signer.signDigest(bytesData)
-
-    return joinSignature(signature)
-  }
-  catch (error) {
-    console.log(error)
-  }
-}
+```
+  npm run sign
 ```
 
-## 验签参考（解出公钥）
+![sign](/sign-tool1.png)
+### 反解公钥
 
-```javascript
-
-export async function Recover(bytesData, signature) {
-  try {
-    const sig = ethers.utils.splitSignature(signature)
-    const recovered = ethers.utils.recoverAddress(bytesData, sig)
-    return recovered
-  }
-  catch (e) {
-    return null
-  }
-}
 ```
+  npm run recover
+```
+![sign](/sign-tool2.png)
+
+
+
+
+
