@@ -74,6 +74,7 @@ export const SIDEBAR = {
 		{ text: 'About fee', link: 'en/aboutFee' },
 		{ text: 'Docking process', link: 'en/cooperGuide' },
 		{ text: 'Product of website', link: 'en/config' },
+		{ text: 'CPay Recharge Boot', link: 'en/cpayRechargeBoot' },
 
 
 		{ text: 'Technical guide', header: true },
