@@ -38,6 +38,7 @@ export const SIDEBAR = {
 		{ text: '收费说明', link: 'zh-CN/aboutFee' },
 		{ text: '商户对接流程', link: 'zh-CN/cooperGuide' },
 		{ text: '产品网站', link: 'zh-CN/config' },
+		{ text: 'CPay充值引导', link: 'zh-CN/cpayRechargeBoot' },
 
 
 		{ text: '技术对接', header: true },
@@ -73,6 +74,7 @@ export const SIDEBAR = {
 		{ text: 'About fee', link: 'en/aboutFee' },
 		{ text: 'Docking process', link: 'en/cooperGuide' },
 		{ text: 'Product of website', link: 'en/config' },
+		{ text: 'CPay Recharge Boot', link: 'en/cpayRechargeBoot' },
 
 
 		{ text: 'Technical guide', header: true },
