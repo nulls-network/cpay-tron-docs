@@ -1,6 +1,6 @@
 ---
-title: CPay支付用户手册
-description: CPay支付用户手册
+title: CPay Payment User Manual
+description: CPay Payment User Manual
 layout: ../../layouts/MainLayout.astro
 ---
 
