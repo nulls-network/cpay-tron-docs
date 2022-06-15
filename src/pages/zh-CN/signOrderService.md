@@ -41,6 +41,38 @@ data为订单参数，确保传入顺序一致,依次为：**订单号、区块�
 
 URL: /v1/order/create
 
-![create](/order.png)
+[签名方式](/zh-CN/signOrderJavascript)
 
+#### 版本1.0
+
+该版本的签名方式采用的signDigest
+
+```json
+{
+	"out_order_no": "20220615172134",
+	"pay_chain": "tron",
+	"pay_token": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+	"pay_amount": "0.01",
+	"signature": "0x9d83b3ab9478fa30818cdf630f57c88be53f24bcca9fb9b2602b83653437cd5b52d9d8e4ed6b9f423a61667fb6177bf0876066b83d89c282e5fdc7beef9de82c1b",
+	"notify": "https://test-notify.vercel.app/api/index",
+	"pub_key": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d"
+}
+```
+
+#### 版本1.1
+
+该版本的签名方式采用的signMessage
+
+```json
+{
+	"out_order_no": "20220615172134",
+	"pay_chain": "tron",
+	"pay_token": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+	"pay_amount": "0.01",
+	"signature": "0x9d83b3ab9478fa30818cdf630f57c88be53f24bcca9fb9b2602b83653437cd5b52d9d8e4ed6b9f423a61667fb6177bf0876066b83d89c282e5fdc7beef9de82c1b",
+	"notify": "https://test-notify.vercel.app/api/index",
+	"pub_key": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d",
+	"version": "1.1"
+}
+```
 

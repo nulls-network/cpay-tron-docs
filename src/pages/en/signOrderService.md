@@ -41,6 +41,40 @@ Returns the wallet account used for the signature
 
 URL: /v1/order/create
 
-![create](/order.png)
+[Signature method](/en/signOrderJavascript)
+
+#### Version1.0
+
+The signature method of this version adopts signDigest
+
+```json
+{
+	"out_order_no": "20220615172134",
+	"pay_chain": "tron",
+	"pay_token": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+	"pay_amount": "0.01",
+	"signature": "0x9d83b3ab9478fa30818cdf630f57c88be53f24bcca9fb9b2602b83653437cd5b52d9d8e4ed6b9f423a61667fb6177bf0876066b83d89c282e5fdc7beef9de82c1b",
+	"notify": "https://test-notify.vercel.app/api/index",
+	"pub_key": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d"
+}
+```
+
+#### Version1.1
+
+The signature method of this version adopts signMessage
+
+```json
+{
+	"out_order_no": "20220615172134",
+	"pay_chain": "tron",
+	"pay_token": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+	"pay_amount": "0.01",
+	"signature": "0x9d83b3ab9478fa30818cdf630f57c88be53f24bcca9fb9b2602b83653437cd5b52d9d8e4ed6b9f423a61667fb6177bf0876066b83d89c282e5fdc7beef9de82c1b",
+	"notify": "https://test-notify.vercel.app/api/index",
+	"pub_key": "0x2143d11B31b319C008F59c2D967eBF0E5ad2791d",
+	"version": "1.1"
+}
+```
+
 
 

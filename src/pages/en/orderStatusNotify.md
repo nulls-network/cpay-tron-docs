@@ -9,40 +9,24 @@ layout: ../../layouts/MainLayout.astro
 1. The notify field filled in when creating an order is the callback notification URL when the order is successfully paid.
 
 2. Use the POST method to call the notify url you filled in when creating the order, and carry the order details json data in the request body.
+  
+3. Signature Field Order: out_order_no,uuid,merchant_address,type,amount,amount_hex,got_amount,pay_result,token
+
+4. Solve the public key specified by the system: 0x8a03fde2d906217dd9d2ae26f66ec5d9635945b7
 
 ## Notification content example
 
 ```json
 {
-  "uuid": "8d59ea74-f73d-42e8-9aab-1bdac04eb030",
-  "out_order_no": "1648173778190",
-  "amount": "0.01",
-  "amount_hex": "10000",
-  "pay_result": "success",
-  "sign": "0xaa52913c83e7c98f8fd980fbedf7e9a14c9d63b45fed14dce8c1686a0ae8e3424e3c7f0a6dee2d3c27a11676f938e74266b6f9f7ff9faabe85e6612ae6407ca01c"
+	"out_order_no": "25927449_20220610155339_461894",
+	"uuid": "9c9406a8-f5bb-4a2d-a69a-38b7b70ed804",
+	"merchant_address": "0xa22433e8fe29490d0770A67eC507F38CE67F1590",
+	"type": "order",
+	"amount": "20.0000",
+	"amount_hex": "20000000",
+	"got_amount": "20.0000",
+	"pay_result": "success",
+	"token": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+	"sign": "0xfd00c5cb7fc5091d73f19260595d91df118ab40f6820d5ea06d7bb92c50ce39a18d87affd77c73110ff62a16721d75836d1b2888c4df50f4b9b0a97d1b7eac561b"
 }
 ```
-
-
-## Test example
-
-### 1.Generate an order
-
-In the example, notify url is the interface used for testing, and print out the request body log
-https://test-notify.vercel.app/api/index
-
-![order-notify](/generateOrder-en.png)
-
-### 2.The payment is successful
-
-![checks-notify](/checks-notify.png)
-
-### 3.Notify callback
-
-![notify](/notify.png)
-
-### 4.Notify order verification
-
-Use the integrated service to verify the order sign signature, and solve the public key specified by the system as 0x8a03fde2d906217dd9d2ae26f66ec5d9635945b7
-
-![recover-notify](/recover-notify.png)

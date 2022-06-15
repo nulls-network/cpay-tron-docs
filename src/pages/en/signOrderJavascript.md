@@ -1,30 +1,25 @@
 ---
-title: Generate sign(JS)
-description: Generate sign(JS)
+title: Generate sign(Code)
+description: Generate sign(Code)
 layout: ../../layouts/MainLayout.astro
 ---
 ## 说明
 
-Using nodejs，dependency ethers.js.    
+Using code, generate signature data.    
 On the one hand, to ensure that the order data is not tampered with, on the other hand, the signature data can be used to unlock the signer's public key to confirm the identity of the merchant.
 ## How to use
 
-https://github.com/nulls-network/sign-tool-nodejs.git
+### Nodejs
 
-## Example
-### Generate sign
+Reference tool address: https://github.com/nulls-network/sign-tool-nodejs.git
 
-```
-  npm run sign
-```
+### C#
 
-![sign](/sign-tool1.png)
-### Reover public key
+Reference tool address: https://github.com/nulls-network/csharp-sign.git
 
-```
-  npm run recover
-```
-![sign](/sign-tool2.png)
+### Java
+
+Reference tool address: https://github.com/nulls-network/java-cpay-sign.git
 
 
 
