@@ -23,6 +23,7 @@ layout: ../../layouts/MainLayout.astro
 | notify       | string | Payment success notification address, the system sends a POST request to this URL |
 | signature    | string | The data after the above fields are signed with the private key.([Signature guide ](/en/signOrderJavascript))          |
 | pub_key      | string | public key used for  signing                                                       |
+| version      | string | The version number of the signature method, the optional value is 1.0 or 1.1 (default 1.0 if not passed)([Signature guide ](/en/signOrderJavascript))           |
 
 **Response body**：
 

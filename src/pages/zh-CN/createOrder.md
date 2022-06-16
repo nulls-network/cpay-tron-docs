@@ -23,6 +23,7 @@ layout: ../../layouts/MainLayout.astro
 | notify       | string | 支付成功通知地址,系统对该 URL 发送 POST 请求                             |
 | signature    | string | 以上字段用私钥签名的后的数据([查看签名指引](/zh-CN/signOrderJavascript)) |
 | pub_key      | string | 签名所用的公钥                                                           |
+| version      | string | 签名方式的版本号，可选值为1.0或者1.1（不传默认1.0）([查看签名指引](/zh-CN/signOrderJavascript))           |
 
 **响应体说明**：
 
