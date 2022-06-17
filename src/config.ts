@@ -67,6 +67,7 @@ export const SIDEBAR = {
 		{ text: '查询提现结果', link: 'zh-CN/queryWithdrawResult' },
 		{ text: '绑定用户收款地址', link: 'zh-CN/bindReceiveAddress' },
 		{ text: '汇率工具', link: 'zh-CN/exchangeFee' },
+		{ text: '提现接口(可通知回调)', link: 'zh-CN/doWithdraw_v2' },
 		{ text: '提现结果回调通知', link: 'zh-CN/withdrawNotify' },
 	],
 	'en':[
