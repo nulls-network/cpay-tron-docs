@@ -20,7 +20,7 @@ layout: ../../layouts/MainLayout.astro
 
 | 字段   | 类型   | 描述                  |
 | ------ | ------ | --------------------- |
-| status | string | 'success' 或 ‘paying’ |
+| status | string | 'success' 或 ‘paying’ 或 ’failed‘ |
 
 ## 请求示例
 

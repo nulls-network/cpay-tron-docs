@@ -20,7 +20,7 @@ layout: ../../layouts/MainLayout.astro
 
 | Filed   | Type   | Description                  |
 | ------ | ------ | --------------------- |
-| status | string | 'success' or ‘paying’ |
+| status | string | 'success' or 'paying' or 'failed' |
 
 ## Example
 
