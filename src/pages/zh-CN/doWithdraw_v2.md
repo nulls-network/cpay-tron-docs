@@ -1,10 +1,10 @@
 ---
-title: 提现接口
-description: 提现接口
+title: 提现接口(可通知回调)
+description: 提现接口(可通知回调)
 layout: ../../layouts/MainLayout.astro
 ---
 
-## 提现接口
+## 提现接口(可通知回调)
 
 **请求地址**: [[baseUrl]](/zh-CN/variables)/v1/merchant/withdrawAndNotify
 
@@ -12,8 +12,9 @@ layout: ../../layouts/MainLayout.astro
 
 **content-type**: application/json
 
-**签名字段顺序**
-(to,token,amount,fromChain,toChain,uuid,notify_url)
+**签名字段顺序:**
+
+to,token,amount,fromChain,toChain,uuid,notify_url
 
 **请求体**:
 

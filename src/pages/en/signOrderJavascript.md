@@ -1,9 +1,9 @@
 ---
-title: Generate sign(Code)
+title: Generate sign and de-sign(Code)
 description: Generate sign(Code)
 layout: ../../layouts/MainLayout.astro
 ---
-## 说明
+## Illustrate
 
 Using code, generate signature data.    
 On the one hand, to ensure that the order data is not tampered with, on the other hand, the signature data can be used to unlock the signer's public key to confirm the identity of the merchant.
