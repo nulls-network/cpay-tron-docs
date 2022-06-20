@@ -27,7 +27,7 @@ to,token,amount,fromChain,toChain,uuid,notify_url
 | toChain   | string | Specify TRON , currently only TRON chains are supported                                            |
 | uuid      | string | Merchants generate random characters by themselves to prevent duplicate signature values                                    |
 | notify_url| string | The callback address of the result |     
-| signature | string | The above field signature is generated                                                        |
+| signature | string | The above field signature is  generated Adopted the v1 signature method          |
 | from      | string | Merchant wallet address (hex format, such as 0x2143d11B31b319C008F59c2D967eBF0E5ad2791d） |
 
 **Response body**

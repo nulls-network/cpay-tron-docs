@@ -27,7 +27,7 @@ to,token,amount,fromChain,toChain,uuid,notify_url
 | toChain   | string | 指定 tron , 目前仅支持波场链                                            |
 | uuid      | string | 商户自行生成随机字符，防止签名值重复                                    |
 | notify_url| string | 结果的回调地址 |     
-| signature | string | 以上字段签名生成                                                        |
+| signature | string | 以上字段签名生成 采用了V1的签名方式                                         |
 | from      | string | 商户钱包地址（hex 格式，如 0x2143d11B31b319C008F59c2D967eBF0E5ad2791d） |
 
 **响应体**

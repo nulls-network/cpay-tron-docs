@@ -22,7 +22,7 @@ layout: ../../layouts/MainLayout.astro
 | fromChain | string | Specify tron ​​, currently only TRON chains are supported                                     |
 | toChain   | string | Specify tron ​​, currently only TRON chains are supported                                     |
 | uuid      | string | Merchants generate random characters by themselves to prevent duplicate signature values      |
-| signature | string | The above field signature is generated                                                        |
+| signature | string | The above field signature is generated Adopted the v1 signature method         |
 | from      | string | Merchant wallet address (hex format, such as 0x2143d11B31b319C008F59c2D967eBF0E5ad2791d)      |
 
 **Response body**
