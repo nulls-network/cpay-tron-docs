@@ -29,7 +29,7 @@ to,token,amount,fromChain,toChain,uuid,notify_url
 | notify_url| string | The callback address of the result |     
 | signature | string | The above field signature is  generated Adopted the v1 signature method          |
 | from      | string | Merchant wallet address (hex format, such as 0x2143d11B31b319C008F59c2D967eBF0E5ad2791d） |
-| isPayment      | boolean | Default false, fee method false: withdraw 10U, fee 0.5U, credit 9.5U, true: withdraw 10U, deposit 10U, fee 0.5U will be deducted from the balance |
+| isPayment      | boolean | Default false, fee method false: withdraw 10U, fee 0.5U, credit 9.5U, true: withdraw 10U, deposit 10U, fee 0.5U will be deducted from the balance（do not participate in signing） |
 **Response body**
 
 | Filed | Type   | Description                                      |

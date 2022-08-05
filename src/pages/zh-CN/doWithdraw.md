@@ -24,7 +24,7 @@ layout: ../../layouts/MainLayout.astro
 | uuid      | string | 商户自行生成随机字符，防止签名值重复                                    |
 | signature | string | 以上字段签名生成   采用了v1的签名方式                                     |
 | from      | string | 商户钱包地址（hex 格式，如 0x2143d11B31b319C008F59c2D967eBF0E5ad2791d） |
-| isPayment      | boolean | 默认false,手续费方式 false: 提现10U 手续费0.5U,到账9.5U, true: 提现10U  到账10U 手续费0.5U从余额扣除 |
+| isPayment      | boolean | 默认false,手续费方式 false: 提现10U 手续费0.5U,到账9.5U, true: 提现10U  到账10U 手续费0.5U从余额扣除 （不参与签名）|
 
 **响应体**
 
